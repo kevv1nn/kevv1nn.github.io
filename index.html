@@ -4,24 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Milagros</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
+    <button id="menu-btn" class="menu-btn">☰</button>
 
-    <button class="menu-btn">☰</button>
+    <nav id="nav">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#momentos">Momentos Especiales</a></li>
+        <li><a href="#playlist">Nuestra Playlist</a></li>
+        <li><a href="#cartas">Cartas para Ti</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
 
-    <nav>
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#galeria">Galería</a></li>
-          <li><a href="#momentos">Momentos Especiales</a></li>
-          <li><a href="#playlist">Nuestra Playlist</a></li>
-          <li><a href="#cartas">Cartas para Ti</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-      
     <header id="inicio">
       <h1>Para Ti, Mi Amor ❤️</h1>
       <p>Un espacio especial hecho con todo mi amor.</p>
@@ -46,15 +45,17 @@
     <section id="momentos">
       <h2>Momentos Inolvidables</h2>
       <ul>
-        <li><strong>Fecha:</strong> Primer beso 💋</li>
-        <li><strong>Fecha:</strong> Primer viaje juntos ✈️</li>
+        <span
+          ><li><strong>Fecha:</strong> Primer beso 💋</li>
+          <li><strong>Fecha:</strong> Primer viaje juntos ✈️</li>
+        </span>
       </ul>
     </section>
 
     <section id="playlist">
       <h2>Nuestra Playlist</h2>
       <iframe
-        src="https://open.spotify.com/embed/playlist/TU_PLAYLIST"
+        src="https://open.spotify.com/playlist/0nk8ITzWxgg190W7VYiQq0?si=AAxYupN1TNaIRVfMMeipdA&pi=VRjQsNorRYS1p"
       ></iframe>
     </section>
 
@@ -74,12 +75,7 @@
     <footer>
       <p>Hecho con 💖 por [Tu Nombre]</p>
     </footer>
+    <script src="/script.js"></script>
   </body>
 
-  <script>
-    document.querySelector(".menu-btn").addEventListener("click", function() {
-      document.querySelector("nav").classList.toggle("show");
-    });
-  </script>
-  
 </html>
