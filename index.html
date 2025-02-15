@@ -1,17 +1,85 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba</title>
-    <style>
-        body{
-            background-color: red;
-        }
-    </style>
-</head>
-<body>
-    <h1>Tomi pvtoooo <br> Juas juas juassss</h1>
-    <h2>xD</h2>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milagros</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+
+    <button class="menu-btn">☰</button>
+
+    <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#momentos">Momentos Especiales</a></li>
+          <li><a href="#playlist">Nuestra Playlist</a></li>
+          <li><a href="#cartas">Cartas para Ti</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      
+    <header id="inicio">
+      <h1>Para Ti, Mi Amor ❤️</h1>
+      <p>Un espacio especial hecho con todo mi amor.</p>
+    </header>
+
+    <section id="nosotros">
+      <h2>Nuestra Historia</h2>
+      <p>
+        Aquí puedes contar cómo se conocieron, sus momentos más especiales y lo
+        que sientes por ella.
+      </p>
+    </section>
+
+    <section id="galeria">
+      <h2>Galería de Recuerdos</h2>
+      <div class="imagenes">
+        <img src="foto1.jpg" alt="Momento especial" />
+        <img src="foto2.jpg" alt="Otro lindo recuerdo" />
+      </div>
+    </section>
+
+    <section id="momentos">
+      <h2>Momentos Inolvidables</h2>
+      <ul>
+        <li><strong>Fecha:</strong> Primer beso 💋</li>
+        <li><strong>Fecha:</strong> Primer viaje juntos ✈️</li>
+      </ul>
+    </section>
+
+    <section id="playlist">
+      <h2>Nuestra Playlist</h2>
+      <iframe
+        src="https://open.spotify.com/embed/playlist/TU_PLAYLIST"
+      ></iframe>
+    </section>
+
+    <section id="cartas">
+      <h2>Cartas para Ti</h2>
+      <p>Aquí puedo escribirte todo lo que siento y lo mucho que te amo...</p>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>
+        Si alguna vez necesitas un recordatorio de cuánto te amo, aquí siempre
+        estará este lugar para ti.
+      </p>
+    </section>
+
+    <footer>
+      <p>Hecho con 💖 por [Tu Nombre]</p>
+    </footer>
+  </body>
+
+  <script>
+    document.querySelector(".menu-btn").addEventListener("click", function() {
+      document.querySelector("nav").classList.toggle("show");
+    });
+  </script>
+  
 </html>
