@@ -1,112 +1,95 @@
-/* ---- ESTILOS GENERALES ---- */
 body {
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(135deg, #007aff, #00b3ff);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  min-height: 100vh;  
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(332deg, #931b8f 0%, #ff3396 100%);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    border: #333 2px solid;
 }
-
-header, section, footer {
-  background: #007aff;
-  padding: 20px 0;
-  text-align: center;
-  border-radius: 16px;
-  margin: 20px auto;
-  max-width: 100%;
-}
-
-/* ---- NAVBAR ESTILO iPHONE ---- */
-nav {
-  background: linear-gradient(135deg, #007aff, #005bbb);
-  padding: 12px 20px;
-  border-radius: 16px;
-  margin: 20px auto;
-  width: 90%;
-  max-width: 90%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Lista del nav */
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-evenly;
-  gap: 10px;
-}
-
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-  padding: 10px 15px;
-  border-radius: 12px;
-  transition: background 0.3s ease;
-}
-
-nav ul li a:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-/* ---- MENÚ HAMBURGUESA ---- */
-.menu-btn {
-  display: none;
-  font-size: 24px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 1001;
-}
-
-span{
-  list-style: none;
-}
-
-/* ---- RESPONSIVE: MENÚ EN MÓVILES ---- */
-@media (max-width: 768px) {
-  .menu-btn {
-    display: block; /* Muestra el botón hamburguesa */
-  }
-
-  nav {
-    display: none; /* Oculta el nav en móviles por defecto */
-    flex-direction: column;
-    position: fixed;
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
+.navbar {
+    padding: 12px 20px;
     border-radius: 16px;
-    padding: 15px;
-    background: linear-gradient(135deg, #007aff, #005bbb);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-  }
-
-  nav ul {
-    flex-direction: column;
-    text-align: center;
-    gap: 12px;
-  }
-
-  nav ul li {
+    margin: 20px auto;
     width: 100%;
+    max-width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: #ff3396;
+    position: fixed;
+    z-index: 1000;
+
   }
 
-  /* Cuando se activa el menú, se muestra */
-  nav.show {
-    display: flex;
-  }
+.container {
+    max-width: 600px;
+    margin: 50px auto;   
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
+.para-ti, .historia, .recuerdos, .momentos, .cartas-para-ti, .questions, .contacto {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Reducimos el tamaño mínimo */
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery-item {
+    background-color: #fff;
+    border-radius: 12px; /* Bordes más redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 250px; /* Ajusta el tamaño máximo de la tarjeta */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px; /* Un pequeño espacio dentro de cada tarjeta */
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Efecto hover para agrandar un poco */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 150px; /* Ajustamos la altura fija para un aspecto más cuadrado */
+    object-fit: cover; /* Asegura que la imagen se ajuste sin perder proporciones */
+    border-radius: 10px;
+}
+
+.p {
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    border-radius: 8px; /* Bordes redondeados para el texto también */
+}
+
+.btn {
+    display: inline-block;
+    background: #007aff;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 50%;
+    color: black;
+}
